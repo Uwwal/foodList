@@ -1,27 +1,20 @@
 {
     "example": {
         "?mean": "greens指绿色带叶蔬菜",
+        "?id" : "用来匹配specialMatch, 同类请用一个id",
         "?oilContent": "含油量, 取值范围 (0,2]",
         "?waterContent": "含水量",
         "?saltContent": "含盐量",
         "?temperature": "温度, 取值0, 1, null, 0指必须常温, 1指必须加热, null指无影响",
-        "?attribute": "属性, 同下面bonusAttribute, 取值范围(0,2], 0指不明显, 2指显著",
-        "?specialMatch": {
-            "?mean": "特殊搭配",
-            "?match": {
-                "?request": "需求",
-                "?flavourType": "味道种类",
-                "?bonusAttribute": {
-                    "?mean": "属性奖励",
-                    "?flavour": "美味",
-                    "?rich": "浓郁",
-                    "?aroma": "香味",
-                    "?umami": "鲜味",
-                    "?sweet": "甜味",
-                    "?salty": "咸味",
-                    "?rawFlavour": "生腥味"
-                }
-            }
+        "?attribute": {
+            "?mean": "属性, 取值范围(0,2], 0指不明显, 2指显著",
+            "?flavour": "美味",
+            "?rich": "浓郁",
+            "?aroma": "香味",
+            "?umami": "鲜味",
+            "?sweet": "甜味",
+            "?salty": "咸味",
+            "?rawFlavour": "生腥味"
         },
         "?nutrition": {
             "?protein": "蛋白质",
@@ -36,53 +29,20 @@
             "?Ca": "钙元素"
         }
     },
-    "foodDictionary" : {
-        "芹菜" : "芹菜",
-        "芹菜叶" : "芹菜"
+    "foodDictionary": {
+        "芹菜": "芹菜",
+        "芹菜叶": "芹菜"
     },
     "芹菜": {
         "oilContent": 0,
         "waterContent": 0.5,
         "saltContent": 0,
         "temperature": 1,
+        "id": "芹菜",
         "attribute": {
             "flavour": 1,
             "rawFlavour": 0.5
         },
-        "specialMatch": [
-            {
-                "request": [
-                    [
-                        "豆腐干"
-                    ],
-                    [
-                        "豆干"
-                    ],
-                    [
-                        "腐竹"
-                    ]
-                ],
-                "flavourType": null,
-                "bonusAttribute": {
-                    "flavour": 1.5
-                }
-            },
-            {
-                "request": [
-                    [
-                        "肝"
-                    ],
-                    [
-                        "肝尖"
-                    ]
-                ],
-                "flavourType": null,
-                "bonusAttribute": {
-                    "flavour": 1.5,
-                    "rich": 1.5
-                }
-            }
-        ],
         "nutrition": {
             "protein": 0.75,
             "vitamin_A": 2,
