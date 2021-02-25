@@ -11,6 +11,7 @@
 			"potato": "薯类",
 			"seafood": "除鱼以外海鲜(包括一些奇怪的鱼)",
 			"poultry": "禽类",
+			"viscus": "内脏",
 			"seasoning": "调味料"
 		},
 		"?specialMatch": {
@@ -59,6 +60,7 @@
 			"mutton": 1.5,
 			"pork": 1.5,
 			"poultry": 1.5,
+			"viscus": 1.5,
 			"berry": 0.5,
 			"orange": 0.5,
 			"drupe": 0.5,
