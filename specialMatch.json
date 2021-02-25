@@ -1,0 +1,35 @@
+{
+    "?specialMatch": {
+        "?mean": "特殊搭配",
+        "?match": {
+            "?flavourType": "味道种类",
+            "?bonusAttribute": {
+                "?mean": "属性奖励",
+                "?flavour": "美味",
+                "?rich": "浓郁",
+                "?aroma": "香味",
+                "?umami": "鲜味",
+                "?sweet": "甜味",
+                "?salty": "咸味",
+                "?rawFlavour": "生腥味"
+            }
+        }
+    },
+    "specialMatchDictionary":{
+        "芹菜豆腐": ["芹菜","豆腐"],
+        "芹菜肝尖": ["芹菜", "肝"]
+    },
+    "芹菜豆腐":{
+        "flavourType": null,
+        "bonusAttribute": {
+            "flavour": 1.5
+        }
+    },
+    "芹菜肝尖":{
+        "flavourType": null,
+        "bonusAttribute": {
+            "flavour": 1.5,
+            "rich": 1.5
+        }
+    }
+}
