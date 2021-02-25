@@ -1,122 +1,133 @@
 {
-	"example":{
-		"?oilContent" : "含油量, 取值范围 (0,2]",
-		"?waterContent" : "含水量",
-		"?saltContent" : "含盐量",
-		"?temperature" : "温度, 取值0和1",
-		"?preference" : {
-			"?mean" : "搭配偏好",
-			"?greens" : "青菜", 
-			"grain" : "谷类",
-			"potato" : "薯类", 
-			"seafood" : "除鱼以外海鲜(包括一些奇怪的鱼)",
-			"poultry" : "禽类",
-			"seasoning" : "调味料"
+	"example": {
+		"?oilContent": "含油量, 取值范围 (0,2]",
+		"?waterContent": "含水量",
+		"?saltContent": "含盐量",
+		"?temperature": "温度, 取值0和1",
+		"?preference": {
+			"?mean": "搭配偏好",
+			"?greens": "青菜",
+			"grain": "谷类",
+			"potato": "薯类",
+			"seafood": "除鱼以外海鲜(包括一些奇怪的鱼)",
+			"poultry": "禽类",
+			"seasoning": "调味料"
 		},
-		"?specialMatch" : {
-			"?mean" : "特殊搭配",
-			"?match" : {
-				"?request" : "需求",
-				"?flavourType" : "味道种类",
-				"?bonusAttribute" : {
-					"?mean" : "属性奖励",
-					"?flavour" : "美味",
-					"?rich" : "浓郁",
-					"?aroma" : "香味",
-					"?umami" : "鲜味",
-					"?sweet" : "甜味",
-					"?salty" : "咸味",
-					"?rawFlavour" : "生腥味"
+		"?specialMatch": {
+			"?mean": "特殊搭配",
+			"?match": {
+				"?request": "需求",
+				"?flavourType": "味道种类",
+				"?bonusAttribute": {
+					"?mean": "属性奖励",
+					"?flavour": "美味",
+					"?rich": "浓郁",
+					"?aroma": "香味",
+					"?umami": "鲜味",
+					"?sweet": "甜味",
+					"?salty": "咸味",
+					"?rawFlavour": "生腥味"
 				}
 			}
+		},
+		"?lossNutrition": {
+			"?mean": "营养流失",
+			"?default": "默认值, 不知道的话就加热0.75, 不加热1",
+			"?protein": "蛋白质",
+			"?vitamin_A": "维生素A",
+			"?starch": "淀粉, 这里指碳水化合物",
+			"?fat": "脂肪",
+			"?Fe": "铁元素",
+			"?Na": "钠元素",
+			"?I": "碘元素",
+			"?Mg": "镁元素"
 		}
 	},
-
-	"煮":{
-		"oilContent" : 0,
-		"waterContent" : 2,
-		"saltContent" : 0,
-		"temperature" : 1,
-		"preference" : {
-			"greens" : 1.5,
-			"grain" : 1.5,
-			"bean" : 1.5,
-			"potato" : 1.5,
-
-			"fish" : 1.5,
-			"seafood" : 1.5,
-			"beef" : 1.5,
-			"mutton" : 1.5,
-			"pork" : 1.5,
-			"poultry" : 1.5,
-
-			"berry" : 0.5,
-			"orange" : 0.5,
-			"drupe" : 0.5,
-			"pome" : 1,
-			"melon" : 0.5,
-
-			"seasoning" : 1
+	"煮": {
+		"oilContent": 0,
+		"waterContent": 2,
+		"saltContent": 0,
+		"temperature": 1,
+		"preference": {
+			"greens": 1.5,
+			"grain": 1.5,
+			"bean": 1.5,
+			"potato": 1.5,
+			"fish": 1.5,
+			"seafood": 1.5,
+			"beef": 1.5,
+			"mutton": 1.5,
+			"pork": 1.5,
+			"poultry": 1.5,
+			"berry": 0.5,
+			"orange": 0.5,
+			"drupe": 0.5,
+			"pome": 1,
+			"melon": 0.5,
+			"seasoning": 1
 		},
-		"specialMatch" : [{
-			"request" : [["豚骨"], ["猪骨"]],
-			"flavourType" : "醇厚",
-			"bonusAttribute" : {
-				"flavour" : 1.5,
-				"rich" : 1.5,
-				"aroma" : 1.25
+		"specialMatch": [
+			{
+				"request": [
+					[
+						"豚骨"
+					],
+					[
+						"猪骨"
+					]
+				],
+				"flavourType": "醇厚",
+				"bonusAttribute": {
+					"flavour": 1.5,
+					"rich": 1.5,
+					"aroma": 1.25
+				}
+			},
+			{
+				"request": [
+					[
+						"梨"
+					]
+				],
+				"flavourType": "甜味",
+				"bonusAttribute": {
+					"sweet": 1.5
+				}
+			},
+			{
+				"request": [
+					[
+						"鸡蛋"
+					],
+					[
+						"鸭蛋"
+					],
+					[
+						"蛋"
+					]
+				],
+				"flavourType": null,
+				"bonusAttribute": {
+					"rawFlavour": 0
+				}
 			}
-		},{
-			"request" : [["梨"]],
-			"flavourType" : "甜味",
-			"bonusAttribute" : {
-				"sweet" : 1.5
-			} 
-		},{
-			"request" : [["鸡蛋", "鸭蛋"]],
-			"flavourType" : null,
-			"bonusAttribute" : {
-				"rawFlavour" : 0
-			}
-		}]
+		],
+		"lossNutrition": {
+			"default": 0.75,
+			"I": 0.5
+		}
 	},
-	"蒸" : {
-
-	},
-	"清蒸" : {
-
-	},
-	"炖" : {
-
-	},
-	"烧" : {
-
-	},
-	"炒" : {
-
-	},
-	"涮" : {
-
-	},
-	"焖" : {
-
-	},
-	"烤" : {
-
-	},
-	"炸" : {
-
-	},
-	"腌" : {
-
-	},
-	"拌" : {
-
-	},
-	"浇" : {
-
-	},
-	"煎" : {
-
-	}
+	"蒸": {},
+	"清蒸": {},
+	"炖": {},
+	"烧": {},
+	"炒": {},
+	"涮": {},
+	"焖": {},
+	"烤": {},
+	"炸": {},
+	"腌": {},
+	"拌": {},
+	"浇": {},
+	"煎": {}
 }
