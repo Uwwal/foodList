@@ -7,12 +7,12 @@
 		"?preference": {
 			"?mean": "搭配偏好",
 			"?greens": "青菜",
-			"grain": "谷类",
-			"potato": "薯类",
-			"seafood": "除鱼以外海鲜(包括一些奇怪的鱼)",
-			"poultry": "禽类",
-			"viscus": "内脏",
-			"seasoning": "调味料"
+			"?grain": "谷类",
+			"?potato": "薯类",
+			"?seafood": "除鱼以外海鲜(包括一些奇怪的鱼)",
+			"?poultry": "禽类",
+			"?viscus": "内脏",
+			"?seasoning": "调味料"
 		},
 		"?specialMatch": {
 			"?mean": "特殊搭配",
