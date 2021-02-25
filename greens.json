@@ -5,7 +5,6 @@
         "?waterContent": "含水量",
         "?saltContent": "含盐量",
         "?temperature": "温度, 取值0, 1, null, 0指必须常温, 1指必须加热, null指无影响",
-        "?request": "需求, 其实是菜名, 因为不需要同时满足所以只用了一维数组",
         "?attribute": "属性, 同下面bonusAttribute, 取值范围(0,2], 0指不明显, 2指显著",
         "?specialMatch": {
             "?mean": "特殊搭配",
@@ -37,15 +36,15 @@
             "?Ca": "钙元素"
         }
     },
+    "foodDictionary" : {
+        "芹菜" : "芹菜",
+        "芹菜叶" : "芹菜"
+    },
     "芹菜": {
         "oilContent": 0,
         "waterContent": 0.5,
         "saltContent": 0,
         "temperature": 1,
-        "request": [
-            "芹菜",
-            "芹菜叶"
-        ],
         "attribute": {
             "flavour": 1,
             "rawFlavour": 0.5
