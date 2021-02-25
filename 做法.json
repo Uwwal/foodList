@@ -12,6 +12,10 @@
 			"?seafood": "除鱼以外海鲜(包括一些奇怪的鱼)",
 			"?poultry": "禽类",
 			"?viscus": "内脏",
+			"?drupe": "核果, 比如桃子",
+			"?pome": "仁果, 比如梨, 苹果",
+			"?orange": "橘类水果, 偏酸性",
+			"?berry": "浆果",
 			"?seasoning": "调味料"
 		},
 		"?specialMatch": {
