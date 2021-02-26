@@ -18,21 +18,22 @@
             "?rawFlavour": "生腥味"
         },
         "?nutrition": {
-            "?protein": "蛋白质",
-            "?vitamin_A": "维生素A",
-            "?starch": "淀粉, 这里指碳水化合物",
-            "?fat": "脂肪",
-            "?Fe": "铁元素",
-            "?Na": "钠元素",
-            "?I": "碘元素",
-            "?Mg": "镁元素",
-            "?K": "钾元素",
-            "?Ca": "钙元素"
+            "?网址": "http://db.foodmate.net/yingyang/",
+            "?protein": "蛋白质 g",
+            "?vitamin_A,C,E": "维生素A,C,E μg,mg,mg",
+            "?starch": "淀粉, 这里指碳水化合物 g",
+            "?fat": "脂肪 g",
+            "?Fe": "铁元素 mg",
+            "?Na": "钠元素 mg",
+            "?Mg": "镁元素 mg",
+            "?K": "钾元素 mg",
+            "?Ca": "钙元素 mg"
         }
     },
     "foodDictionary": {
         "芹菜": "芹菜",
-        "芹菜叶": "芹菜"
+        "芹菜叶": "芹菜",
+        "芹菜茎": "芹菜"
     },
     "芹菜": {
         "oilContent": 0,
@@ -46,13 +47,17 @@
             "rawFlavour": 0.5
         },
         "nutrition": {
-            "protein": 0.75,
-            "vitamin_A": 2,
-            "vitamin_B": 2,
-            "vitamin_C": 2,
-            "Fe": 1.5,
-            "Ca": 1.5,
-            "starch": 0.75
+            "protein": 2.6,
+            "fat": 0.6,
+            "vitamin_A": 488,
+            "vitamin_C": 22,
+            "vitamin_E": 2.5,
+            "Ca": 40,
+            "Mg": 58,
+            "Fe": 0.6,
+            "K": 137,
+            "Na": 0.08,
+            "starch": 3.7
         }
     }
 }
