@@ -2,6 +2,8 @@
     "example": {
         "?mean": "greens指绿色带叶蔬菜",
         "?id" : "用来匹配specialMatch, 同类请用一个id",
+        "?class": "具体类",
+        "?parent": "父类",
         "?oilContent": "含油量, 取值范围 (0,2]",
         "?waterContent": "含水量",
         "?saltContent": "含盐量",
@@ -39,6 +41,8 @@
         "saltContent": 0,
         "temperature": 1,
         "id": "芹菜",
+        "class": "greens",
+        "parent": "vegetable",
         "attribute": {
             "flavour": 1,
             "rawFlavour": 0.5
