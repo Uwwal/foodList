@@ -1,0 +1,84 @@
+{
+    "example": {
+        "?mean": "beanProduct指豆制品",
+        "?id" : "用来匹配specialMatch, 同类请用一个id",
+        "?class": "具体类",
+        "?parent": "父类",
+        "?oilContent": "含油量, 取值范围 (0,2]",
+        "?waterContent": "含水量",
+        "?temperature": "温度, 取值0, 1, null, 0指必须常温, 1指必须加热, null指无影响",
+        "?attribute": {
+            "?mean": "属性, 取值范围(0,2], 0指不明显, 2指显著",
+            "?flavour": "美味",
+            "?rich": "浓郁",
+            "?aroma": "香味",
+            "?umami": "鲜味",
+            "?sweet": "甜味",
+            "?salty": "咸味",
+            "?rawFlavour": "生腥味"
+        },
+        "?nutrition": {
+            "?网址": "http://db.foodmate.net/yingyang/",
+            "?protein": "蛋白质 g",
+            "?vitamin_A,C,E": "维生素A,C,E μg,mg,mg",
+            "?starch": "淀粉, 这里指碳水化合物 g",
+            "?fat": "脂肪 g",
+            "?Fe": "铁元素 mg",
+            "?Na": "钠元素 mg",
+            "?Mg": "镁元素 mg",
+            "?K": "钾元素 mg",
+            "?Ca": "钙元素 mg"
+        }
+    },
+    "foodDictionary": {
+        "豆腐": "豆腐",
+        "豆腐干": "豆干",
+        "豆干": "豆干"
+    },
+    "豆腐": {
+        "oilContent": 0,
+        "waterContent": 0.25,
+        "temperature": null,
+        "id": "豆腐",
+        "class": "beanProduct",
+        "parent": null,
+        "attribute": {
+            "flavour": 1,
+            "umami": 0.25
+        },
+        "nutrition": {
+            "protein": 8.1,
+            "starch": 3.8,
+            "fat": 3.7,
+            "vitamin_E": 2.71,
+            "Ca": 164,
+            "Mg": 27,
+            "Fe": 1.9,
+            "K": 125,
+            "Na": 72
+        }
+    },
+    "豆干": {
+        "oilContent": 0,
+        "waterContent": 0.125,
+        "temperature": null,
+        "id": "豆腐",
+        "class": "beanProduct",
+        "parent": null,
+        "attribute": {
+            "flavour": 1,
+            "aroma": 0.5,
+            "salty": 0.25
+        },
+        "nutrition": {
+            "protein": 16.2,
+            "starch": 10.7,
+            "fat": 3.6,
+            "Ca": 308,
+            "Mg": 64,
+            "Fe": 4.9,
+            "K": 140,
+            "Na": 76.5
+        }
+    }
+}
