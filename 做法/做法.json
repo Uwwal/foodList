@@ -201,7 +201,7 @@
 				],
 				"flavourType": "咸味",
 				"bonusAttribute": {
-					"flavour": 1.5
+					"flavour": 1.5,
 					"aroma": 1.25
 				}
 			}
