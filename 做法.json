@@ -180,7 +180,8 @@
 		"lossNutrition": {
 			"default": 0.75,
 			"I": 0.5,
-			"vitamin_A~D": 1,
+			"vitamin_B": 0,
+			"vitamin_C": 0.5,
 			"protein": 0.75
 		}
 	},
