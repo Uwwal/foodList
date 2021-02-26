@@ -5,18 +5,23 @@
 		"?saltContent": "含盐量",
 		"?temperature": "温度, 取值0和1",
 		"?preference": {
-			"?mean": "搭配偏好",
-			"?greens": "青菜",
-			"?grain": "谷类",
-			"?potato": "薯类",
-			"?seafood": "除鱼以外海鲜(包括一些奇怪的鱼)",
-			"?poultry": "禽类",
-			"?viscus": "内脏",
-			"?drupe": "核果, 比如桃子",
-			"?pome": "仁果, 比如梨, 苹果",
-			"?orange": "橘类水果, 偏酸性",
-			"?berry": "浆果",
-			"?seasoning": "调味料"
+			"?mean": "搭配偏好, 查找顺序: 具体类->父类->默认值",
+			"?greens": "具体类, 青菜",
+			"?grain": "具体类, 谷类",
+			"?potato": "具体类, 薯类",
+			"?seafood": "具体类, 除鱼以外海鲜(包括一些奇怪的鱼)",
+			"?poultry": "具体类, 禽类",
+			"?viscus": "具体类, 内脏",
+			"?drupe": "具体类, 核果, 比如桃子",
+			"?pome": "具体类, 仁果, 比如梨, 苹果",
+			"?orange": "具体类, 橘类水果, 偏酸性",
+			"?berry": "具体类, 浆果",
+			"?wheatenFood": "具体类, 面食, 如馒头面条",
+			"?beanProduct": "具体类, 豆制品",
+			"?seasoning": "具体类, 调味料",
+			"?vegetable": "父类",
+			"?fruit": "父类",
+			"?melt": "父类, 包括seafood"
 		},
 		"?specialMatch": {
 			"?mean": "特殊搭配",
@@ -36,7 +41,7 @@
 			}
 		},
 		"?lossNutrition": {
-			"?mean": "营养流失",
+			"?mean": "营养流失, 取值[0,1], 0指全部流失.",
 			"?default": "默认值, 不知道的话就加热0.75, 不加热1",
 			"?protein": "蛋白质",
 			"?vitamin_A~D": "维生素A~D",
@@ -75,34 +80,17 @@
 		"saltContent": 0,
 		"temperature": 1,
 		"preference": {
-			"greens": 1.5,
-			"grain": 1.5,
-			"bean": 1.5,
-			"potato": 1.5,
-			"fish": 1.5,
-			"seafood": 1.5,
-			"beef": 1.5,
-			"mutton": 1.5,
-			"pork": 1.5,
-			"poultry": 1.5,
-			"viscus": 1.5,
-			"berry": 0.5,
-			"orange": 0.5,
-			"drupe": 0.5,
+			"vegetable": 1.5,
+			"melt": 1.5,
+			"fruit": 0.5,
 			"pome": 1,
-			"melon": 0.5,
-			"nut": 1.5,
+			"beanProduct": 0.5,
 			"seasoning": 1
 		},
 		"specialMatch": [
 			{
 				"request": [
-					[
-						"豚骨"
-					],
-					[
-						"猪骨"
-					]
+					"猪骨"
 				],
 				"flavourType": "醇厚",
 				"bonusAttribute": {
@@ -113,9 +101,7 @@
 			},
 			{
 				"request": [
-					[
-						"梨"
-					]
+					"梨"
 				],
 				"flavourType": "甜味",
 				"bonusAttribute": {
@@ -124,15 +110,7 @@
 			},
 			{
 				"request": [
-					[
-						"鸡蛋"
-					],
-					[
-						"鸭蛋"
-					],
-					[
-						"蛋"
-					]
+					"蛋"
 				],
 				"flavourType": null,
 				"bonusAttribute": {
@@ -158,22 +136,14 @@
 		"saltContent": 1,
 		"temperature": 1,
 		"preference": {
-			"greens": 0,
-			"grain": 0,
-			"bean": 0,
+			"vegetable": 0.25,
 			"potato": 1.5,
-			"fish": 1.5,
+			"melt": 1.5,
 			"seafood": 1,
-			"beef": 1.5,
-			"mutton": 1.5,
-			"pork": 1.5,
-			"poultry": 1.5,
 			"viscus": 1,
-			"berry": 0,
-			"orange": 0,
-			"drupe": 0,
-			"pome": 0,
-			"melon": 0,
+			"fruit": 0,
+			"wheatenFood": 1,
+			"beanProduct": 1.5,
 			"seasoning": 1.5
 		},
 		"specialMatch": [],
