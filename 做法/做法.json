@@ -26,7 +26,7 @@
 			"?mean": "特殊搭配",
 			"?match": {
 				"?request": "需求",
-				"?flavourType": "味道种类",
+				"?flavourType": "味道种类, 防止串味, 分甜/咸/酸",
 				"?bonusAttribute": {
 					"?mean": "属性奖励",
 					"?flavour": "美味",
@@ -43,13 +43,11 @@
 			"?mean": "营养流失, 取值[0,1], 0指全部流失.",
 			"?default": "默认值, 不知道的话就加热0.75, 不加热1",
 			"?protein": "蛋白质",
-			"?vitamin": "维生素A~D",
-			"?vitamin_A~D": "维生素A~D, 后缀为A,B,C,D",
+			"?vitamin_A,C,E": "维生素, 后缀为A,C,E",
 			"?starch": "淀粉, 这里指碳水化合物",
 			"?fat": "脂肪",
 			"?Fe": "铁元素",
 			"?Na": "钠元素",
-			"?I": "碘元素",
 			"?Mg": "镁元素",
 			"?Ca": "钙元素",
 			"?K": "钾元素"
@@ -91,7 +89,7 @@
 				"request": [
 					"猪骨"
 				],
-				"flavourType": "醇厚",
+				"flavourType": null,
 				"bonusAttribute": {
 					"flavour": 1.5,
 					"rich": 1.5,
@@ -111,15 +109,14 @@
 				"request": [
 					"蛋"
 				],
-				"flavourType": null,
+				"flavourType": "咸味",
 				"bonusAttribute": {
 					"rawFlavour": 0
 				}
 			}
 		],
 		"lossNutrition": {
-			"default": 0.75,
-			"I": 0.5
+			"default": 0.75
 		}
 	},
 	"蒸": {},
@@ -146,10 +143,7 @@
 		},
 		"specialMatch": [],
 		"lossNutrition": {
-			"default": 0.75,
-			"I": 0.5,
-			"vitamin_B": 0,
-			"vitamin_C": 0.5,
+			"default": 0.5,
 			"protein": 0.75
 		}
 	},
