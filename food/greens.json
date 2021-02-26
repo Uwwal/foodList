@@ -6,7 +6,6 @@
         "?parent": "父类",
         "?oilContent": "含油量, 取值范围 (0,2]",
         "?waterContent": "含水量",
-        "?saltContent": "含盐量",
         "?temperature": "温度, 取值0, 1, null, 0指必须常温, 1指必须加热, null指无影响",
         "?attribute": {
             "?mean": "属性, 取值范围(0,2], 0指不明显, 2指显著",
@@ -38,7 +37,6 @@
     "芹菜": {
         "oilContent": 0,
         "waterContent": 0.5,
-        "saltContent": 0,
         "temperature": 1,
         "id": "芹菜",
         "class": "greens",
