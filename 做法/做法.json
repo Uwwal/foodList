@@ -2,7 +2,6 @@
 	"example": {
 		"?oilContent": "含油量, 取值范围 (0,2]",
 		"?waterContent": "含水量",
-		"?saltContent": "含盐量",
 		"?temperature": "温度, 取值0和1",
 		"?preference": {
 			"?mean": "搭配偏好, 查找顺序: 具体类->父类->默认值",
@@ -78,7 +77,6 @@
 	"煮": {
 		"oilContent": 0,
 		"waterContent": 2,
-		"saltContent": 0,
 		"temperature": 1,
 		"preference": {
 			"vegetable": 1.5,
@@ -134,7 +132,6 @@
 	"炸": {
 		"oilContent": 2,
 		"waterContent": 0.5,
-		"saltContent": 1,
 		"temperature": 1,
 		"preference": {
 			"vegetable": 0.25,
