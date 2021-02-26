@@ -150,5 +150,67 @@
 	"腌": {},
 	"拌": {},
 	"浇": {},
-	"煎": {}
+	"煎": {
+		"oilContent": 1,
+		"waterContent": 0.25,
+		"temperature": 1,
+		"preference": {
+			"vegetable": 0.2,
+			"potato": 1.5,
+			"melt": 1.5,
+			"seafood": 1.2,
+			"fruit": 0,
+			"wheatenFood": 1.4,
+			"beanProduct": 1.4,
+			"seasoning": 1.4
+		},
+		"specialMatch": [
+			{
+				"request": [
+					"水饺"
+				],
+				"flavourType": "咸味",
+				"bonusAttribute": {
+					"flavour": 1.5,
+					"aroma": 1.25
+				}
+			},
+			{
+				"request": [
+					"土豆"
+				],
+				"flavourType": "咸味",
+				"bonusAttribute": {
+					"flavour": 1.5,
+					"aroma": 1.1
+				}
+			},
+			{
+				"request": [
+					"牛排"
+				],
+				"flavourType": "咸味",
+				"bonusAttribute": {
+					"flavour": 1.5,
+					"aroma": 1.25
+				}
+			},
+			{
+				"request": [
+					"蛋"
+				],
+				"flavourType": "咸味",
+				"bonusAttribute": {
+					"flavour": 1.5
+					"aroma": 1.25
+				}
+			}
+		],
+		"lossNutrition": {
+			"default": 0.5,
+			"protein": 0.75,
+			"vitamin_A": 0.1,
+			"vitamin_C": 0.05
+		}
+	}
 }
